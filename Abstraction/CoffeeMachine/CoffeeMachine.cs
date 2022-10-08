@@ -9,6 +9,11 @@ public class CoffeeMachine
         this.coffeeLoad = coffeeLoad;
     }
 
+    public CoffeeBean GetCoffeeBean()
+    {
+        return coffeeLoad.Key;
+    }
+    
     public Coffee BrewCoffee(CoffeeSelection coffeeSelection, CoffeeSize coffeeSize)
     {
         var coffee = new Coffee(coffeeLoad.Key, coffeeSelection, coffeeSize);

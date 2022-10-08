@@ -16,8 +16,13 @@ public static class Program
         // Brew a fresh coffee
         try
         {
-            Console.WriteLine("Making coffee ...");
-            var espresso = machine.BrewCoffee(CoffeeSelection.Espresso, CoffeeSize.Single);
+            const CoffeeSelection coffeeSelection = CoffeeSelection.Espresso;
+            const CoffeeSize coffeeSize = CoffeeSize.Double;
+            
+            Console.WriteLine($"Preparing {coffeeSize} {coffeeSelection} of {machine.GetCoffeeBean().Name} coffee ...");
+            
+            var espresso = machine.BrewCoffee(coffeeSelection, coffeeSize);
+            
             Console.WriteLine($"Your {espresso.CoffeeBean.Name} coffee is ready!");
         }
         catch (CoffeeException e)

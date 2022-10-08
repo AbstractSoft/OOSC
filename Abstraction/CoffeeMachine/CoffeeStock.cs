@@ -2,25 +2,27 @@ namespace Abstraction;
 
 public class CoffeeStock
 {
-    private Dictionary<CoffeeBean, CoffeeQuantity> stock;
+    private readonly Dictionary<CoffeeBean, CoffeeQuantity> stock;
 
     public CoffeeStock()
     {
-        stock = new Dictionary<CoffeeBean, CoffeeQuantity>();
+        stock = new Dictionary<CoffeeBean, CoffeeQuantity>(new CoffeeBeanComparer());
     }
 
-    public void AddCoffeeQuantity(CoffeeBean coffee, CoffeeQuantity coffeeQuantity)
+    public void AddCoffeeQuantity(CoffeeBean coffeeBean, CoffeeQuantity coffeeQuantity)
     {
-        if (stock.ContainsKey(coffee))
+        if (stock.ContainsKey(coffeeBean))
         {
-            stock[coffee].Weight += coffeeQuantity.Weight;
+            stock[coffeeBean].Weight += coffeeQuantity.Weight;
             return;
         }
 
-        stock.Add(coffee, coffeeQuantity);
+        stock.Add(coffeeBean, coffeeQuantity);
     }
 
-    public KeyValuePair<CoffeeBean, CoffeeQuantity> TakeCoffeeQuantity(CoffeeBean coffeeBean, CoffeeQuantity coffeeQuantity)
+    public KeyValuePair<CoffeeBean, CoffeeQuantity> TakeCoffeeQuantity(
+        CoffeeBean coffeeBean, 
+        CoffeeQuantity coffeeQuantity)
     {
         if (!stock.ContainsKey(coffeeBean))
         {
