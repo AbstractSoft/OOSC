@@ -1,6 +1,7 @@
 namespace Abstraction;
 
-public enum CoffeeSelection { 
+public enum CoffeeSelection {
+    Unspecified,
     Filter, 
     Espresso, 
     Ristretto,
