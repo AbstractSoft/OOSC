@@ -1,4 +1,4 @@
-namespace Abstraction;
+namespace CoffeeMachine;
 
 [Serializable]
 public class CoffeeException : Exception

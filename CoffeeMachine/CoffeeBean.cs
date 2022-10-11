@@ -1,4 +1,4 @@
-namespace Abstraction;
+namespace CoffeeMachine;
 
 public class CoffeeBean
 {

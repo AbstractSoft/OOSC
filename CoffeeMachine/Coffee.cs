@@ -1,4 +1,4 @@
-namespace Abstraction;
+namespace CoffeeMachine;
 
 public class Coffee {
     public Coffee(CoffeeBean coffeeBean, CoffeeSelection coffeeSelection, CoffeeSize coffeeSize) {
