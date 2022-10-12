@@ -22,6 +22,13 @@ public class PersonBuilder
 
     public Person GetResult()
     {
-        return new Person(personName, personPhoneNumbers, personEmail);
+        //return new Person(personName, personPhoneNumbers, personEmail);
+        
+        return new { 
+            PersonName:personName,
+            PersonPhoneNumbers: personPhoneNumbers,...
+                   }
+        
+        
     }
 }
