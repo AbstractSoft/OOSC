@@ -13,8 +13,12 @@ public abstract class Person {
  
  public PersonName PersonName {get; init;}
  
+ public ChangePersonName(string firstName, string lastName) {
  
-
+  PersonName.
+  
+ }
+ 
 // Lista de telefoane
 //        , Phone number, Email
 
