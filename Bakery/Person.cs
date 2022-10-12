@@ -10,6 +10,10 @@ public abstract class Person {
  - pas 3
  => build();
 */
+ 
+ public PersonName PersonName {get; init;}
+ 
+ 
 
 // Lista de telefoane
 //        , Phone number, Email
