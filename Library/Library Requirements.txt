@@ -1,0 +1,24 @@
+Users/ Admins:
+- The system must allow the unregistered users to register themselves into the application.
+
+- The system must allow the registered users to update his/her’s information
+
+- The system must allow the admins to register books into the application via the administrative section
+
+- The system must allow the admins to suspend a registered user account
+
+- The system must allow the admins to notify the registered users about different events like damaged books, late return
+
+- The system must allow the registered users to extend the borrowing time period
+
+- The system must allow the admins to retire books via the administrative section
+
+- The system must allow the registered users to view their borrowing history
+
+- The system must allow the registered users and admins to login/logout
+
+- The system must issue an invoice for the membership fee
+
+
+
+
