@@ -2,13 +2,7 @@ namespace Bakery;
 
 public abstract class Person {
 
- // private static Person MakeValidClickHelpConfiguration()
- // {
- //  var clickHelpConfigurationBuilder = new ClickHelpConfigurationBuilder();
- //  clickHelpConfigurationBuilder.SetProjectUri(new Uri(Constants.ValidProjectUrl));
- //  return clickHelpConfigurationBuilder.GetResult();
- // }
- //
+
 /*
  // Builder Design Pattern
  - pas 1
@@ -16,7 +10,14 @@ public abstract class Person {
  - pas 3
  => build();
 */
-
+ 
+ public PersonName PersonName {get; init;}
+ 
+ public ChangePersonName(string firstName, string lastName) {
+   PersonName.ChangeFirstName(firstName);
+   PersonName.ChangeLastName(lastName);  
+ }
+  
 // Lista de telefoane
 //        , Phone number, Email
 
