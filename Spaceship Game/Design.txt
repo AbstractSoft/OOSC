@@ -1,0 +1,79 @@
+x “System”
+
+* Spaceship
+
+* Area
+
+* Asteroid
+
+* Missile
+
+* Player
+
+* Direction
+
+x Path
+
+0,0
+——————
+|        a
+|   o
+|
+——————x,y
+
+<— x,y -> 0,y -> -1*Speed,-1*Speed
+
+Area
+const maxAsteroids
+- Width, Length,
+- GetAsteroidsCount()
+- GenerateAsteroid()
+- Hit()
+coordonate lista asteroizi, lista proiectile si naveta
+
+Asteroid
+- Size -> enum{big, small}, Speed -> Random (1,5)
+- Move()
+-Destroy() -> IsDestroyed
+-Direction
+
+Missile
+- const Size
+- Speed
+- Move()
+-Destroy() -> IsDestroyed
+-Direction
+
+Spaceship
+- const Lifes = 3
+-RotateToLeft()
+-RotateToRight()
+-LifesCount
+-Destroy() -> IsDestroyed
+-Launch()
+
+Player
+- Start()
+- Stop()
+- GetScore()
+
+Direction
+- PositionStart -> x, y
+- PositionEnd -> x,y
+
+——————
+The System spawns an enemy asteroid in the play area. The asteroid flies toward the spaceship that fires a missile at it. The player steers the spaceship in the direction to avoid the asteroid path. The missile flies past the asteroid and disappears offscreen.
+
+spawns an enemy asteroid
+
+flies toward
+
+fires a missile
+
+steers the spaceship
+
+avoid the asteroid path
+
+flies past the asteroid
+
+disappears offscreen
